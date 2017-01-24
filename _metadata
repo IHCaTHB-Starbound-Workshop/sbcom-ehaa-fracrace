@@ -1,0 +1,9 @@
+{
+  "author" : "Argle Bargle, edited by IHCaTHB",
+  "description" : "Easier Hammers and Axes - Frackin Races compatibility patch",
+  "friendlyName" : "Easier Hammers and Axes - Frackin Races compatibility patch",
+  "includes" : ["FrackinRaces"],
+  "name" : "EHAA-FRACRACE.IHC",
+  "requires" : ["FrackinRaces"],
+  "version" : "0.1"
+}

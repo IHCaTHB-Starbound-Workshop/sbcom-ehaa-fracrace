@@ -11,6 +11,7 @@ function HammerSmash:init()
 
   MeleeSlash.init(self)
   self:setupInterpolation()
+  local bounds = mcontroller.boundBox()
 end
 
 function HammerSmash:windup(windupProgress)
@@ -64,6 +65,53 @@ function HammerSmash:fire(windupProgress)
   animator.setAnimationState("swoosh", "fire")
   animator.playSound("fire")
   animator.burstParticleEmitter(self.weapon.elementalType .. "swoosh")
+
+-- ******************* FR ADDONS FOR HAMMER SWINGS
+  if status.isResource("food") then
+    self.foodValue = status.resource("food")
+    hungerLevel = status.resource("food")
+  else
+    self.foodValue = 50
+    hungerLevel = 50
+  end
+    --food defaults
+  hungerMax = { pcall(status.resourceMax, "food") }
+  hungerMax = hungerMax[1] and hungerMax[2]
+  if status.isResource("energy") then
+    self.energyValue = status.resource("energy")  --check our Food level
+  else
+    self.energyValue = 80
+  end
+
+  local species = world.entitySpecies(activeItem.ownerEntityId())
+  -- Primary hand, or single-hand equip  
+  local heldItem = world.entityHandItem(activeItem.ownerEntityId(), activeItem.hand())
+  --used for checking dual-wield setups
+  local opposedhandHeldItem = world.entityHandItem(activeItem.ownerEntityId(), activeItem.hand() == "primary" and "alt" or "primary")
+  local randValue = math.random(100)  -- chance for projectile       
+  if not self.meleeCount then self.meleeCount = 0 end
+     
+  if species == "floran" then  --florans use food when attacking
+    if status.isResource("food") then
+      status.modifyResource("food", (status.resource("food") * -0.01) )
+    end
+  end
+
+  if species == "glitch" then  --glitch consume energy when wielding axes and hammers. They get increased critChance as a result
+    if not self.critValueGlitch then
+      self.critValueGlitch = ( math.ceil(self.energyValue/8) ) 
+    end  
+    if self.energyValue >= 25 then
+      if status.isResource("food") then
+        adjustedHunger = hungerLevel - (hungerLevel * 0.01)
+        status.setResource("food", adjustedHunger)      
+      end        
+      status.setPersistentEffects("glitchEnergyPower", {
+        { stat = "critChance", amount = self.critValueGlitch }
+      })     
+    end
+  end
+-- ***********************************************
 
   local smashMomentum = self.smashMomentum
   smashMomentum[1] = smashMomentum[1] * mcontroller.facingDirection()
@@ -127,4 +175,11 @@ function HammerSmash:windupAngle(ratio)
   local armRotation = interp.ranges(ratio, self.stances.windup.armAngle)
 
   return util.toRadians(weaponRotation), util.toRadians(armRotation)
+end
+
+function HammerSmash:uninit()
+  status.clearPersistentEffects("glitchEnergyPower")
+  status.clearPersistentEffects("floranFoodPowerBonus")
+  status.clearPersistentEffects("apexbonusdmg")
+  self.blockCount = 0
 end

@@ -1,9 +1,0 @@
-{
-  "author" : "Argle Bargle, edited by IHCaTHB",
-  "friendlyName" : "Easier Hammers and Axes - Frackin Races compatibility patch",
-  "version" : "1.0",
-  "name" : "EHAA-FRACRACE.IHC",
-  "link" : "",
-  "description" : "This mod makes hammers and axes a bit easier to use by allowing you to release the hammer/axe at any point during the charge animation, doing a fraction of the damage relative to how much of the charge you did. This makes them operate a lot more like bows, where if you only hold the bow for half the charge, you get half the damage. These changes also apply to any modded hammers and axes that use the default scripts.",
-  "steamContentId" : ""
-}

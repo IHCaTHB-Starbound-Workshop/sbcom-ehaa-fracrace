@@ -2,22 +2,34 @@
 #ingame
 #######
 
-^#5aa9d6;Title^reset;
+^#5aa9d6;A Frackin Races compatible version of Argle Bargles Easier Hammers and Axes.^reset;
+
+Requires Frackin Races. Please support Argle Bargles original Easier Hammers and Axes.
 
 For more, click the MEGATHREAD link from the steam page.
+
+Original mod text:
+This mod makes hammers and axes a bit easier to use by allowing you to release the hammer/axe at any point during the charge animation, doing a fraction of the damage relative to how much of the charge you did. This makes them operate a lot more like bows, where if you only hold the bow for half the charge, you get half the damage. These changes also apply to any modded hammers and axes that use the default scripts.
 
 ######
 #steam
 ######
 
-[h1]Title[/h1]
+[h1]A Frackin Races compatible version of Argle Bargles Easier Hammers and Axes.[/h1]
+
+Requires [url=http://steamcommunity.com/sharedfiles/filedetails/?id=763259329]Frackin Races[/url]. Please support Argle Bargles original [url=http://steamcommunity.com/sharedfiles/filedetails/?id=787655233]Easier Hammers and Axes[/url].
 
 [url=community.playstarbound.com/threads/124193/]MEGATHREAD[/url]
-Alternate downloads can be found on my [url=https://github.com/IsaacHart/sbmod-/releases/0.1/]github.[/url]
+Alternate downloads can be found on my [url=https://github.com/IsaacHart/sbcom-ehaa-fracrace/releases/0.1/]github.[/url]
+
+Original mod text:
+This mod makes hammers and axes a bit easier to use by allowing you to release the hammer/axe at any point during the charge animation, doing a fraction of the damage relative to how much of the charge you did. This makes them operate a lot more like bows, where if you only hold the bow for half the charge, you get half the damage. These changes also apply to any modded hammers and axes that use the default scripts.
 
 ######
 #forum
 ######
+
+Requires Frackin Races. Please support Argle Bargles original Easier Hammers and Axes.
 
 [URL='http://community.playstarbound.com/threads/124193/']MEGATHREAD[/URL]
 
@@ -25,8 +37,19 @@ Alternate downloads can be found on my [url=https://github.com/IsaacHart/sbmod-/
 
 PERMISSIONS: granted per license, gplv3, included in download.
 
+Original mod text:
+This mod makes hammers and axes a bit easier to use by allowing you to release the hammer/axe at any point during the charge animation, doing a fraction of the damage relative to how much of the charge you did. This makes them operate a lot more like bows, where if you only hold the bow for half the charge, you get half the damage. These changes also apply to any modded hammers and axes that use the default scripts.
+
 ###########
 #megathread
 ###########
 
-Standard (0.1) [URL='http://steamcommunity.com/sharedfiles/filedetails/?id=']steam[/URL] | [URL='http://community.playstarbound.com/resources//']forum[/URL] | [URL='https://github.com/IsaacHart/sbmod-/releases']github[/URL] | [URL='https://github.com/IsaacHart/sbmod-/releases/download/0.1/sbmod--0.1.pak']direct[/URL]
+EHAA - FracRace (0.1) [URL='http://steamcommunity.com/sharedfiles/filedetails/?id=']steam[/URL] | [URL='http://community.playstarbound.com/resources//']forum[/URL] | [URL='https://github.com/IsaacHart/sbcom-ehaa-fracrace/releases']github[/URL] | [URL='https://github.com/IsaacHart/sbcom-ehaa-fracrace/releases/download/0.1/sbcom-ehaa-fracrace-0.1.pak']direct[/URL]
+
+#########
+#original
+#########
+
+This mod makes hammers and axes a bit easier to use by allowing you to release the hammer/axe at any point during the charge animation, doing a fraction of the damage relative to how much of the charge you did. This makes them operate a lot more like bows, where if you only hold the bow for half the charge, you get half the damage. These changes also apply to any modded hammers and axes that use the default scripts.
+
+
